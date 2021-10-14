@@ -37,8 +37,8 @@ public class TCP extends Thread {
         super.run();
         try {
             //2. Servidor intentando conectar
-            socket = new Socket("192.168.1.7",5000);
-
+            socket = new Socket("192.168.39.156",5000);
+            System.out.println("Cliente conectado");
             //3. Conectados
             OutputStream os = socket.getOutputStream();
             OutputStreamWriter osw = new OutputStreamWriter(os);

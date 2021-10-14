@@ -18,15 +18,15 @@ public class Controller extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.control);
 
         tcp = TCP.getInstance();
         tcp.start();
 
-        arribaBtn = findViewById(R.id.upBtn);
-        abajoBtn = findViewById(R.id.downBtn);
-        izquierdaBtn = findViewById(R.id.leftBtn);
-        derechaBtn = findViewById(R.id.rightBtn);
+        arribaBtn = findViewById(R.id.arribaBtn);
+        abajoBtn = findViewById(R.id.abajoBtn);
+        izquierdaBtn = findViewById(R.id.izquierdaBtn);
+        derechaBtn = findViewById(R.id.derechaBtn);
 
 
 
